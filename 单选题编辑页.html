@@ -1,0 +1,155 @@
+<div class="editor_question">
+    <div class="inner radio">
+        <div class="row editor_title"><label class="row_title">题目</label>
+            <div class="row_content">
+                <div contenteditable="true"
+                     class="question_title mod_editor inline_editor cke_editable cke_editable_inline cke_contents_ltr cke_show_borders"
+                     data-editor="editor16" tabindex="0" spellcheck="false" role="textbox" aria-label="false"
+                     aria-describedby="cke_450" style="position: relative;">
+                    <p>这里是一道单选题</p>
+                </div>
+            </div>
+        </div>
+        <div class="row editor_description">
+            <label class="row_title">备注</label>
+            <div class="row_content">
+                <div placeholder="(可选填)" contenteditable="true"
+                     class="question_description mod_editor inline_editor cke_editable cke_editable_inline cke_contents_ltr cke_show_borders"
+                     data-editor="editor14" tabindex="0" spellcheck="false" role="textbox" aria-label="false"
+                     aria-describedby="cke_396" style="position: relative;">
+                    <p>这里是单选题的备注</p>
+                </div>
+            </div>
+        </div>
+        <div class="row editor_type">
+            <div class="row_content">
+                <select id="question_type">
+                    <option value="radio" selected="">单选题</option>
+                    <option value="checkbox">多选题</option>
+                    <option value="select">下拉题</option>
+                    <option value="text">单行文本题</option>
+                    <option value="textarea">多行文本题</option>
+                    <option value="matrix_radio">矩阵单选题</option>
+                    <option value="matrix_checkbox">矩阵多选题</option>
+                    <option value="matrix_star">矩阵量表题</option>
+                    <option value="star">量表题</option>
+                    <option value="sort">排序题</option>
+                    <option value="chained_selects">联动题</option>
+                    <option value="upload">附件题</option>
+                    <option value="text_multiple">填空题</option>
+                </select>
+                <label> <input name="question_required" style="margin-right: 0;" type="checkbox" checked="">
+                必填</label>
+            </div>
+        </div>
+        <div class="row editor_options" style="">
+            <ul class="options_list">
+                <div class="additional_setting_title">
+                    <span class="no_random" style="display:none;">不随机</span>
+                    <span class="correct_answer" style="">正确答案</span>
+                </div>
+                <ul class="normal_options_list">
+                    <li class="option_item" data-id="o-100-ABCD" data-display="" data-goto="">
+                        <span class="handle"></span>  <!--<input type="radio" disabled/>-->
+                        <div class="option_input_wrap">
+                            <div class="mod_editor inline_editor option_text cke_editable cke_editable_inline cke_contents_ltr cke_show_borders"
+                                 contenteditable="true" data-editor="editor12" tabindex="0" spellcheck="false"
+                                 role="textbox" aria-label="false" aria-describedby="cke_342"
+                                 style="position: relative;">
+                                <p>选项1</p>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="btn btn_del btn_del_option">×</a>
+                        <div class="additional_setting">
+                            <input class="no_random" type="checkbox" style="display: none;">
+                            <input class="correct_answer" type="checkbox" checked="" style="">
+                        </div>
+                    </li>
+                    <li class="option_item" data-id="o-101-EFGH" data-display="" data-goto="">
+                        <span class="handle"></span>  <!--<input type="radio" disabled/>-->
+                        <div class="option_input_wrap">
+                            <div class="mod_editor inline_editor option_text cke_editable cke_editable_inline cke_contents_ltr cke_show_borders"
+                                 contenteditable="true" data-editor="editor13" tabindex="0" spellcheck="false"
+                                 role="textbox" aria-label="false" aria-describedby="cke_369"
+                                 style="position: relative;">
+                                <p>选项2</p>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="btn btn_del btn_del_option">×</a>
+                        <div class="additional_setting">
+                            <input class="no_random" type="checkbox" style="display: none;">
+                            <input class="correct_answer" type="checkbox" style=""></div>
+                    </li>
+                </ul>
+                <li class="option_item option_create">
+                    <div class="option_input_wrap"><span class="add_option">新建选项</span></div>
+                </li>
+                <li class="option_item other_option" style="display: none;" data-display="" data-goto="">
+                    <span class="handle"></span>
+                    <div class="option_input_wrap">
+                        <div class="mod_editor inline_editor option_text other_option_text cke_editable cke_editable_inline cke_contents_ltr cke_show_borders"
+                             contenteditable="true" data-editor="editor15" tabindex="0" spellcheck="false"
+                             role="textbox" aria-label="false" aria-describedby="cke_423" style="position: relative;">
+                            <p>其他<span
+                                    class="mod_fillblank">____&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;</span>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="btn btn_del_other">×</a>
+                    <div class="additional_setting"><input class="no_random" type="checkbox" style="display: none;">
+                        <input class="correct_answer" type="checkbox" style=""></div>
+                </li>
+            </ul>
+            <div class="options_control">
+                <a class="add_other " href="javascript:;">添加「其他」项</a> | <a class="add_options" href="javascript:;">批量修改</a>
+            </div>
+        </div>
+        <div class="row refer_detail" style="display:none;">
+            <p>此题选项来源于第<b class="refer_question_index">&nbsp;&nbsp;</b>题中的选中项</p>
+        </div>
+        <div class="row row_split">
+            <div class="split"></div>
+            <a class="toggle_adv_setting" href="javascript:;"> <span class="txt">展开高级设置</span> <i></i> </a>
+        </div>
+        <div class="row editor_adv">
+            <div class="row">
+                <label>每行显示
+                    <select name="maxRow">
+                        <option selected="" value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </label>
+            </div>
+            <div class="row">
+                <label><input name="random" type="checkbox">选项随机顺序</label>
+                <label class="disabled"><input name="show_stat" disabled="" type="checkbox">显示投票结果</label>
+            </div>
+            <div class="row">
+                <label><input name="assess" type="checkbox" checked="">设置为评测题目</label>
+                <label class="disabled">
+                    <input name="refer_options" type="checkbox" disabled="">选项引用
+                    <select class="refer_question_select" style="display: none;">
+                        <option value="">请选择来源题目（多选题）</option>
+                    </select>
+                </label>
+            </div>
+            <div class="row">
+                <div class="assess_adv_setting" style="background:#eee;padding: 5px 10px; ">
+                    <label>题目分值 <input class="score" type="number" min="0" name="score" value="5"> </label>
+                </div>
+            </div>
+        </div>
+        <div class="row editor_control">
+            <a href="javascript:;" id="editor_confirm_btn" class="btn btn_small btn_blue btn_confirm">确定</a>
+            <a href="javascript:;" id="editor_cancel_btn" class="btn btn_small btn_white btn_cancel">取消</a>
+        </div>
+    </div>
+</div>
